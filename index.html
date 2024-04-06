@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de compras</title>
+</head>
+<body>
+    <form action="compras.php" method="POST">
+        <h1>Resumo de Venda</h1>
+        <p>
+           <label>Descrição do produto:</label>
+           <input type="text" name="descricao">
+        </p>
+        <p>                                                                            
+          <label>Preço:</label>
+          <input type="text" name="preco" >
+        </p>
+        <p>                                                                            
+          <label>Vendedor:</label>
+          <input type="text" name="nome" >
+        </p>
+        <p>
+        <label>Data da venda:</label>
+        <input type="text" name="data">
+        </p>
+        <p>
+        <label>Parcelas:</label>
+        <select name="parcelas">
+            <option value="1">1x</option>
+            <option value="2">2x</option>
+            <option value="3">3x</option>
+            <option value="4">4x</option>
+            <option value="5">5x</option>
+            <option value="6">6x</option>
+            <option value="7">7x</option>
+            <option value="8">8x</option>
+            <option value="9">9x</option>
+            <option value="10">10x</option>
+            <option value="11">11x</option>
+            <option value="12">12x</option>
+          </select>
+        </p>
+        <p>
+            <label> Data pagamento: </label><br>
+            <input type="radio" name="dia" value="5">5<br>
+            <input type="radio" name="dia" value="10">10<br>
+            <input type="radio" name="dia" value="15">15<br>
+            <input type="radio" name="dia" value="20">20<br>
+        </p>
+        <p><input type="submit" id="resumovenda" value="Enviar"></p>
+    </form>
+</body>
+</html>
